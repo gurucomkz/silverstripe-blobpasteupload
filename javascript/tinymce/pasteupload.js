@@ -35,15 +35,14 @@
                 xhr.send(data);
                 xhr.onload = function(e) {
                     if (this.status == 200) {
-                        console.log(this.response);
-
                         try{
                             var rsp = JSON.parse(this.response),
                                 rspfile = rsp[0],
                                 el = editor.dom.get(myid);
-                            console.log(el);
-                            el.setAttribute('id',null);
+                            el.removeAttribute('id');
                             el.setAttribute('src',rspfile.url);
+                            el.setAttribute('width',rspfile.width);
+                            el.setAttribute('height',rspfile.height);
                             el.setAttribute('data-id',rspfile.id);
                             el.setAttribute('class',"leftAlone ss-htmleditorfield-file image");
                         }catch(e){
