@@ -1,6 +1,7 @@
-# blob pasteupload (SilverStripe 4 module)
+# blob pasteupload (SilverStripe 5 module)
 
-Allows to paste images from clipboard to the built-in TinyMCE editor with subsequent upload to the files library. Currently Images are uploaded to the root folder.
+Allows to paste images from clipboard to the built-in TinyMCE editor with subsequent upload to the files library. 
+Currently Images are uploaded to the root folder and the filenames are not preserved.
 
 ## Installation
 
